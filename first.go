@@ -4,6 +4,17 @@ import (
     "fmt"
 )
 
+func addNumber(a int,b int) int {
+    return a+b
+}
+
+func rectProps(length, width float64) (float64, float64, float64) {  
+    var area = length * width
+    var perimeter = (length + width) * 2
+    var test = (length * width / 2)
+    return area, perimeter,test
+}
+
 func main() {  
     // fmt.Println("Hello World")
     // name:= "Paradox"
@@ -16,6 +27,7 @@ func main() {
     // c1 := complex(5, 7)
     // c2 := 8 + 27i
     // cadd := c1 + c2
+    // fmt.Println("C===>", c1)
     // fmt.Println("sum:", cadd)
     // cmul := c1 * c2
     // fmt.Println("product:", cmul)
@@ -47,9 +59,29 @@ func main() {
     // var complex64Var complex64 = a
     // fmt.Println("intVar",intVar, "\nint32Var", int32Var, "\nfloat64Var", float64Var, "\ncomplex64Var",complex64Var)
 
-    var a = 40.2 % 8
-    fmt.Printf("a's type is %T and value is %v", a, a)
+    // var a = 40.2 % 8
+    // fmt.Printf("a's type is %T and value is %v", a, a)
+
+    // arr := [6]int{1,2,3,4,5,6}
+    // for i,x:=range arr {
+    //     fmt.Printf("a[%d] ==> %d \n",i,x)
+    // }
 
 
+    // sum of two number
 
+    // a,b := 0,0
+    // fmt.Printf('Enter First Number')
+    // fmt.Scan(&a)
+    // fmt.Printf('Enter Second Number')
+    // fmt.Scan(&b)
+    // var c int = addNumber(5,3)
+    // var add, sub, mul, div = application(5,3)
+    // fmt.Println(add)
+    // fmt.Println(sub)
+    // fmt.Println(div)
+    area, _, test := rectProps(10.8, 5.6) // perimeter is discarded
+    fmt.Printf("Area %f ===> %f ", area, test)
 }
+
+
